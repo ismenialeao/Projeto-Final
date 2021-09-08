@@ -1,35 +1,14 @@
 //CRIANDO MINHA CONEXÃO
-
-// require('dotenv').config()
-// const mongoose = require("mongoose")
-
-// const MONGO_URL = process.env.MONGODB_URI
-
-// const connect = () => mongoose.connect(MONGO_URL, {
-
-//     useNewUrlParser: true,
-//     useUnifiedTopology: true
-
-// })
-//     .then(console.log('Database conectada com sucesso.'))
-//     .catch(err => console.err)
-
-// module.exports= {connect}
-
-
+const mongoose = require('mongoose')
 require('dotenv').config()
-const mongoose = require("mongoose")
-
-
-const connect = () => {mongoose.connect(process.env.DATABASE_URL,
-{
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-
+const MONGO_URL = process.env.MONGODB_URI || process.env.MONGODB_URL
+const connect = () => {mongoose.connect(
+  MONGO_URL, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true
 })
-    .then(console.log('Database conectada com sucesso.'))
-    .catch(err => console.err)
+  .then(console.log('Database conectada com sucesso.'))
+  .catch(err => console.err)
 }
-module.exports= {connect}
 
-
+module.exports = { connect }
