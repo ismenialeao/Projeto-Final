@@ -47,9 +47,25 @@ const update = async(req, res) =>{
             res.status(500).json({message: err.message})
     }
 }
+const deleteArea = async(req,res) =>{
+    const deleteArea = await Area.findById(req.params.id)
+    if(deleteArea){
+        return res.status(404).json({'mesage': 'Area not found!'})
+    }
+    try{
+        await deleteArea.remove()
+        res.status(200).json({'message': 'Deletado com sucesso!'})
+    }
+    catch (err){
+        res.status(500).json({'message': 'erro'})
+    }
+}
+
+
 
 module.exports = {
     getAll,
     createAreas,
     update,
+    deleteArea
 }
