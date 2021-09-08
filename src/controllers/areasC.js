@@ -12,6 +12,7 @@ const createAreas = async(req,res) =>{
     const qualArea = new Area({
         _id: new mongoose.Types.ObjectId(),
         name: req.body.name,
+        sobre: req.body.sobre,
         criadoEm: req.body.criadoEm,
     })
 

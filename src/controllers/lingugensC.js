@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-const lingugensM = require('../models/lingugensM')
+
 const Linguagem = require('../models/lingugensM')
 
 
