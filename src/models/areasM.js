@@ -6,6 +6,10 @@ const areaSchema = new mongoose.Schema({
       type: String,
       required: true
     },
+    sobre:{
+      type: String,
+      required: true
+    },
     criadoEm: { //data e horario em que foi criado
       type: Date,
       required: true,
