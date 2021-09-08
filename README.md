@@ -63,9 +63,3 @@
 - [x] Não criar Areas com mesmo nome
 - [x] Para criar um novo título, deverá vincular no momento da criação a uma criação já existente no sistema, utilizando o numero do id do estúdio correspondente no corpo da requisição
 
-
-
-"mongodb+srv://ISMY:100389@reprograma.n9z04.mongodb.net/sample_mflix?retryWrites=true&w=majority"
-
-
-mongodb+srv://ISMY:100389@cluster0.v8zug.mongodb.net/myFirstDatabase?retryWrites=true&w=majority

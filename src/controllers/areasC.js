@@ -49,7 +49,7 @@ const update = async(req, res) =>{
 }
 const deleteArea = async(req,res) =>{
     const deleteArea = await Area.findById(req.params.id)
-    if(deleteArea){
+    if(!deleteArea){
         return res.status(404).json({'mesage': 'Area not found!'})
     }
     try{

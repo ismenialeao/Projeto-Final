@@ -64,7 +64,7 @@ const update = async(req, res) =>{
 }
 const deleteLinguagem = async(req, res) =>{
     const deleted = await Linguagem.findById(req.params.id)
-    if(deleted){
+    if(!deleted){
         return res.status(404).json({'message' : 'Linguagem not found!'})
     }
 
