@@ -17,6 +17,6 @@ app.use('/areas', router)
 const routerLinguagem = require('./src/routes/linguagensR')
 app.use('/linguagens', routerLinguagem)
 
+const PORT = process.env.PORT || 2222
 
-
-app.listen(2222, () => console.log('Servidor rodando na porta 2222'))
+app.listen(PORT, () => console.log('Servidor rodando na porta 2222'))
