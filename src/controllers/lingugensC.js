@@ -1,14 +1,28 @@
 const mongoose = require('mongoose')
+const lingugensM = require('../models/lingugensM')
 const Linguagem = require('../models/lingugensM')
 
 
-//ler todas linguagens
+
 const getAll = async(req, res) =>{
    const linguagem = await Linguagem.find()
    res.status(200).json(linguagem)
 }
 
-//criar
+const getAllFront = async(req, res) =>{
+    const front = await Linguagem.find().populate("area")
+    const filterFront = front.filter(front => front.area.name == "Front-end")
+
+    res.status(200).json(filterFront)
+}
+
+const getAllBack = async(req,res) =>{
+    const back = await Linguagem.find().populate("area")
+    const filterBack = back.filter(back => back.area.name == "Back-end")
+
+    res.status(200).json(filterBack)
+}
+
 const createLinguagem = async(req, res) =>{
     const qualLinguagem = new Linguagem({
         _id: new mongoose.Types.ObjectId(),
@@ -32,7 +46,46 @@ const createLinguagem = async(req, res) =>{
         }
 }
 
+const update = async(req, res) =>{
+    try{
+        const mundanca = await Linguagem.findById(req.params.id)
+        if(mundanca ==!null){
+            return res.status(404).json({message: "Linguagem não encontrada"})
+        }
+        if (req.body.linguagem != null){
+            mundanca.linguagem = req.body.linguagem
+        }
+        const mudancaAtualizada = await mundanca.save()
+        res.status(200).json(mudancaAtualizada)
+    
+    }   catch (err){
+            res.status(500).json({message: err.message})
+    }
+}
+const deleteLinguagem = async(req, res) =>{
+    const deleted = await Linguagem.findById(req.params.id)
+    if(deleted){
+        return res.status(404).json({'message' : 'Linguage not found!'})
+    }
+
+    try{
+        await deleted.remove()
+        res.status(200).json({'message': 'Deletado com sucesso!'})
+    }
+    catch (err){
+        res.status(500).json({'message': 'erro'})
+    }
+}
+    
+ 
+
+
 module.exports = {
     getAll,
-    createLinguagem
+    getAllFront,
+    getAllBack,
+    createLinguagem,
+    update,
+    deleteLinguagem
+    
 }

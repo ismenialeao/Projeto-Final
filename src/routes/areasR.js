@@ -5,7 +5,11 @@ const controller = require('../controllers/areasC')
 
 //GET
 router.get('/', controller.getAll)
+
 router.post('/',controller.createAreas)
+
+router.patch('/:id', controller.update)
+
 
 
 

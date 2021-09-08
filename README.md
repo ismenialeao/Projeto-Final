@@ -18,11 +18,11 @@
 
 ### Instalando dependencias
 
-npm express   const express = require("express")
-npm mongoose  const mongoose = require("mongoose")
-npm nodemon
-npm dotenv
-npm i 
+`npm express`  
+`npm mongoose`
+`npm nodemon`
+`npm dotenv`
+`npm i`
 
 
 #### Arquitetura MVC
@@ -50,6 +50,8 @@ npm i
    |- 📄 .env
    |- 📄 .env.example
    |- 📄 .gitignore
+   |- 📄 package-lock.json
+   |- 📄 package.jason
    |- 📄 package
    |- 📄 README.me
    |- 📄 server.js
@@ -57,6 +59,6 @@ npm i
 
 #### Regras de negocio
 
-[x]- Não criar invençoes como mesmo nome
-[x]- Não criar titulo com mesmo nome
-[x]- Para criar um novo título, deverá vincular no momento da criação a uma criação já existente no sistema, utilizando o numero do id do estúdio correspondente no corpo da requisição
+- [x] Não criar Linguagens como mesmo nome
+- [x] Não criar Areas com mesmo nome
+- [x] Para criar um novo título, deverá vincular no momento da criação a uma criação já existente no sistema, utilizando o numero do id do estúdio correspondente no corpo da requisição
