@@ -12,6 +12,12 @@ Falta de informação muitos iniciantes acabam virando um profissional pato, nã
 abracar o mundo e não faz nada 100%.
 
 O presente projeto tem como objetivo mostrar algumas areas possiveis para desenvolvedores e as linguagens mais utilizadas por elas segundo pesquisas, porem vale lembrar que a linguagem utilizada pelo leitor é de gosto pessoal somente estaremos realizando uma citação sobre algumas possibilidades.
+  
+  
+ <h3 align="center"> Areas de programação escolhidas </h3 align="center">
+ 
+ #### Back-end e Front- end
+ ![1557013220106532478](https://user-images.githubusercontent.com/63822305/132774041-3858aa54-ab4b-420e-b569-9fc2b38c1ffc.jpg)
 
 
 
