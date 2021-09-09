@@ -1,9 +1,20 @@
-<h1 align="center">  **Projeto Final Reprograma**
+<h1 align="center">  Projeto Final Reprograma
 
-<h1 align="center"> **Guia de Profissoões**
+<h1 align="center"> Guia de Profissoões
+
+Escolher uma profissão não é uma tarefa facil!!
+Devemos levar em consideração nossas habilidades, gostos e personalidade.
+
+Ao iniciar a transição de carreira muitas pessoaas se sentem confusas pois a area da Tecnologia é gigante, area de negocios que se integrou a tecnologia, desingn,  suporte, cibersegurança, desenvolvedores dentre outras diversas.
+
+Falta de informação muitos iniciantes acabam virando um profissional pato, não sabe voar, nadar e falar, querendo
+abracar o mundo e não faz nada 100%.
+
+O presente projeto tem como objetivo mostrar algumas areas possiveis para desenvolvedores e as linguagens mais utilizadas por elas segundo pesquisas, porem vale lembrar que a linguagem utilizada pelo leitor é de gosto pessoal somente estaremos realizando uma citação sobre algumas possibilidades.
 
 
-### Tecnologias utilizadas:
+
+<h3 align="center"> Tecnologias utilizadas
 
 
 
@@ -31,9 +42,9 @@
 ` npm cors`
 
 
-#### Arquitetura MVC
+<h3 align="center"> Arquitetura MVC
 
-         📁 BLACK
+         📁 GUIA
             |
             |-  📁 src
             |    |
@@ -63,7 +74,7 @@
             |- 📄 server.js
 
 
-#### Regras de negocio
+<h3 align="center"> Regras de negocio
 
 - [x] Não criar Linguagens como mesmo nome
 - [x] Não criar Areas com mesmo nome
