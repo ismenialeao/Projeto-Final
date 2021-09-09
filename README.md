@@ -1,6 +1,12 @@
-<h2 align="center">  Projeto Final Reprograma
+<h1 align="center">  **Projeto Final Reprograma**
 
-### Tecnologias que vamos usar:
+<h1 align="center"> **Guia de Profissoões**
+
+
+### Tecnologias utilizadas:
+
+
+
 
 | Ferramenta | Descrição |
 | --- | --- |
@@ -11,18 +17,18 @@
 | `mongoose` | Dependência que interage com o MongoDB para a conexão da database, criação do model e das collections|
 | `nodemon` | Dependência que observa as atualizações realizadas nos documentos para rodar o servidor automaticamente|
 | `npm ` | Gerenciador de pacotes|
-| `MongoDb` | Banco de dado não relacional orietado a documentos|
-| `MongoDb Compass ou Robo 3T` | Interface gráfica para verificar se os dados foram persistidos|
+| `MongoDb Atlas` | Banco de dado não relacional orietado a documentos em nuvem|
 | `Postman` | Interface gráfica para realizar os testes|
 
 
 ### Instalando dependencias
 
+`npm init -y`   "npm init-y"
 `npm express`  
 `npm mongoose`
 `npm nodemon`
 `npm dotenv`
-`npm i`
+` npm cors`
 
 
 #### Arquitetura MVC
