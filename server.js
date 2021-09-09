@@ -15,7 +15,7 @@ const router = require('./src/routes/areasR')
 app.use('/areas', router)
 
 
-// //ROTAS LINGUAGENS
+// //ROTAS 
 const routerLinguagem = require('./src/routes/linguagensR')
 app.use('/linguagens', routerLinguagem)
 
