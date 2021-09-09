@@ -2,7 +2,8 @@
 
 <h1 align="center"> Guia de Profissoões
 
-Escolher uma profissão não é uma tarefa facil!!
+  
+#### Escolher uma profissão não é uma tarefa facil!!
 Devemos levar em consideração nossas habilidades, gostos e personalidade.
 
 Ao iniciar a transição de carreira muitas pessoaas se sentem confusas pois a area da Tecnologia é gigante, area de negocios que se integrou a tecnologia, desingn,  suporte, cibersegurança, desenvolvedores dentre outras diversas.
@@ -14,7 +15,7 @@ O presente projeto tem como objetivo mostrar algumas areas possiveis para desenv
 
 
 
-<h3 align="center"> Tecnologias utilizadas
+<h3 align="center"> Tecnologias utilizadas </h3 align="center">
 
 
 
@@ -34,7 +35,8 @@ O presente projeto tem como objetivo mostrar algumas areas possiveis para desenv
 
 ### Instalando dependencias
 
-`npm init -y`   "npm init-y"
+
+`npm init -y` 
 `npm express`  
 `npm mongoose`
 `npm nodemon`
@@ -42,7 +44,7 @@ O presente projeto tem como objetivo mostrar algumas areas possiveis para desenv
 ` npm cors`
 
 
-<h3 align="center"> Arquitetura MVC
+<h3 align="center"> Arquitetura MVC </h3 align="center">
 
          📁 GUIA
             |
@@ -74,7 +76,7 @@ O presente projeto tem como objetivo mostrar algumas areas possiveis para desenv
             |- 📄 server.js
 
 
-<h3 align="center"> Regras de negocio
+<h3 align="center"> Regras de negocio </h3 align="center">
 
 - [x] Não criar Linguagens como mesmo nome
 - [x] Não criar Areas com mesmo nome
