@@ -19,7 +19,7 @@ const getAllBack = async(req,res) =>{
     const back = await linguagensM.find().populate("area")
     const filterBack = back.filter(back => back.lingugensM.area == "Back-end")
 
-    res.status(200).json(filterBack)
+    res.status(200).json(back)
 }
 
 const createLinguagem = async(req, res) =>{
