@@ -10,14 +10,14 @@ const getAll = async(req, res) =>{
 
 const getAllFront = async(req, res) =>{
     const front = await Linguagem.find().populate("area")
-    const filterFront = front.filter(front => front.area.name == "Front-end")
+    const filterFront = front.filter(front => front.area.name == "front-end")
 
     res.status(200).json(filterFront)
 }
 
 const getAllBack = async (req,res) =>{
     const back = await Linguagem.find().populate("area")
-    const filterBack = back.filter(back => back.area.name == "Back-end")
+    const filterBack = back.filter(back => back.area.name == "back-end")
     
         res.status(404).json(filterBack)
 }
