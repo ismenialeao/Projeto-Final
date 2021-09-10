@@ -19,10 +19,10 @@ const getAllFront = async(req, res) =>{
 }
 
 const getAllBack = async(req,res) =>{
-    const back = req.params.area
+    const back = req.body.area
     const FilterBack = await Linguagem.find({area: back})
         if(FilterBack){
-            res.json(filterFront)
+            res.json(FilterBack)
         }
         else{
             res.status(404).send()

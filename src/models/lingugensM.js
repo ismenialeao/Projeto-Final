@@ -21,8 +21,9 @@ const linguegensSchema = new mongoose.Schema({
         required: true,
         default: new Date
         
-    }
-})
+    },
+    versionKey: false
+});
 
 
 
