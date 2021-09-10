@@ -1,9 +1,9 @@
 <h1 align="center">  Projeto Final Reprograma
 
-<h1 align="center"> Guia de Profissoões
+<h1 align="center"> Guia de Profissoões </h3 align="center">
 
   
-#### Escolher uma profissão não é uma tarefa facil!!
+ Escolher uma profissão não é uma tarefa facil!!
 Devemos levar em consideração nossas habilidades, gostos e personalidade.
 
 Ao iniciar a transição de carreira muitas pessoaas se sentem confusas pois a area da Tecnologia é gigante, area de negocios que se integrou a tecnologia, desingn,  suporte, cibersegurança, desenvolvedores dentre outras diversas.
@@ -14,14 +14,19 @@ abracar o mundo e não faz nada 100%.
 O presente projeto tem como objetivo mostrar algumas areas possiveis para desenvolvedores e as linguagens mais utilizadas por elas segundo pesquisas, porem vale lembrar que a linguagem utilizada pelo leitor é de gosto pessoal somente estaremos realizando uma citação sobre algumas possibilidades.
   
   
- <h3 align="center"> Areas de programação escolhidas </h3 align="center">
+ <h2 align="center"> Areas de programação escolhidas </h2 align="center">
  
- #### Back-end e Front- end
+ ### Back-end e Front- end
  ![1557013220106532478](https://user-images.githubusercontent.com/63822305/132774041-3858aa54-ab4b-420e-b569-9fc2b38c1ffc.jpg)
 
+### Dados
+  ![0_zrPsLV-NzQ-AKjD-](https://user-images.githubusercontent.com/63822305/132775145-f8baac35-d5e8-42b8-abb8-762776fc0aaf.jpg)
+  
+### Mobile
+  ![d44beeeaf39fd4bb68305ec04e0cc327](https://user-images.githubusercontent.com/63822305/132777708-a0dda914-e227-4d1b-af36-531f354b78b2.jpeg)
 
 
-<h3 align="center"> Tecnologias utilizadas </h3 align="center">
+<h2 align="center"> Tecnologias utilizadas </h2 align="center">
 
 
 
@@ -50,7 +55,7 @@ O presente projeto tem como objetivo mostrar algumas areas possiveis para desenv
 ` npm cors`
 
 
-<h3 align="center"> Arquitetura MVC </h3 align="center">
+<h2 align="center"> Arquitetura MVC </h2 align="center">
 
          📁 GUIA
             |
@@ -82,7 +87,7 @@ O presente projeto tem como objetivo mostrar algumas areas possiveis para desenv
             |- 📄 server.js
 
 
-<h3 align="center"> Regras de negocio </h3 align="center">
+<h2 align="center"> Regras de negocio </h2 align="center">
 
 - [x] Não criar Linguagens como mesmo nome
 - [x] Não criar Areas com mesmo nome
