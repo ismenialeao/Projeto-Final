@@ -10,7 +10,7 @@ const getAll = async(req, res) =>{
 const getAllFront = async(req, res) =>{
     const front = req.params._area
     const filterFront = await Linguagem.find({_area: new mongoose.Types.ObjectId()})
-        if(filterFront){
+        if(filterFront == "area: 61394e4f62dd10a5bee9f0e6"){
             res.json(filterFront)
         }
         else{
@@ -20,7 +20,7 @@ const getAllFront = async(req, res) =>{
 
 const getAllBack = async(req,res) =>{
     const back = req.params.area
-    const FilterBack = await Linguagem.find({_area:  mongoose.Schema.Types.ObjectId()})
+    const FilterBack = await Linguagem.find({_area: new mongoose.Schema.Types.ObjectId()})
         if(FilterBack == "Back-end"){
             res.json(back)
         }
