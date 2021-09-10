@@ -22,7 +22,7 @@ const getAllBack = async(req,res) =>{
     const back = req.params.descrition
     const FilterBack = await Linguagem.find({descrition: back})
         if(FilterBack){
-            res.json(FilterBack)
+            res.json(back)
         }
         else{
             res.status(404).send()
