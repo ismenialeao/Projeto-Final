@@ -15,6 +15,7 @@ O presente projeto tem como objetivo mostrar algumas areas possiveis para desenv
   
   
  <h2 align="center"> Areas de programação escolhidas </h2 align="center">
+  
  
  ### Back-end e Front- end
  ![1557013220106532478](https://user-images.githubusercontent.com/63822305/132774041-3858aa54-ab4b-420e-b569-9fc2b38c1ffc.jpg)
@@ -29,7 +30,7 @@ O presente projeto tem como objetivo mostrar algumas areas possiveis para desenv
 <h2 align="center"> Tecnologias utilizadas </h2 align="center">
 
 
-
+  
 
 | Ferramenta | Descrição |
 | --- | --- |
@@ -93,3 +94,37 @@ O presente projeto tem como objetivo mostrar algumas areas possiveis para desenv
 - [x] Não criar Areas com mesmo nome
 - [x] Para criar um novo título, deverá vincular no momento da criação a uma criação já existente no sistema, utilizando o numero do id do estúdio correspondente no corpo da requisição
 
+  
+  <h2 align="center"> Rotas </h2 align="center">
+  
+  #### Rotas gerais
+  
+| Busca | Rota |
+| --- | --- |
+| area| '/areas' |
+| linguagem | '/linguagens'|
+  
+#### Rotas das Areas
+  
+| Metodo | Rota |Demanda de negocio|
+| --- | --- | --- |
+|GET | '/' | Pesquisa por todas as areas criadas |
+|POST |'/' | Cria um area |
+|PATCH | '/:id' | Edita um cadatatro por um id especifico |
+|DELETE | '/:id' | Deleta um cadastro por um id especifico |
+  
+ 
+#### Rotas das Linguagens
+  
+| Metodo | Rota |Demanda de negocio|
+| --- | --- | --- |
+|GET | '/' | Pesquisa por todas as linguagens criadas|
+|GET | '/front-end' | Pesquisa por todas as linguagens da area front-end cadastradas|
+|GET | '/back-end' | Pesquisa por todas as linguagens da area back-end cadastradas|
+|GET | '/dados' | Pesquisa por todas as linguagens da area dados cadastradas|
+|GET | '/mobile' | Pesquisa por todas as linguagens da area mobile cadastradas|
+|POST |'/' | Cria uma linguagem |
+|PATCH | '/:id' | Edita um cadatatro por um id especifico |
+|DELETE | '/:id' | Deleta um cadastro por um id especifico |
+  
+  
