@@ -10,10 +10,12 @@
 
 - [Introduçãoção](#introdução)
 - [Desenvolvimento](#desenvolvimento)
-- [Fonte dos dados](#fonte-dos-dados)
+- [Areas de programação escolhidas](#areas-de-programação-escolhidas)
 - [Funcionalidades](#funcionalidades)
 - [Tecnologias, dependências e bibliotecas](#tecnologias-dependências-e-bibliotecas)
-- [Instruções para instalação e contribuições no projeto](#instruções-para-instalação-e-contribuições-no-projeto)
+- [Instruções para instalações](#instruções-para-instalação)
+- [Arquitetura MVC](#arquitetura-MVC)
+- [Regras de negocio](#regras-de-negocio)
 - [Features e rotas](#features-e-rotas)
 - [Referências](#referências)
   
@@ -40,24 +42,31 @@ O presente projeto tem como objetivo mostrar algumas areas possiveis para desenv
 - Faça Network com profissionais da area desejada
   
   
- <h2 align="center"> Areas de programação escolhidas </h2 align="center">
+  ## **Areas de programação escolhidas**
   
  
  ### Back-end e Front- end
+ 
+O desenvolvedor de back-end, atua na parte dos sistemas e garante que esteja tudo devidamente certo com o servidor.  Por sua vez,
+o desenvolvedor de front-end toma o design elaborado e o transforma em algo funcional por meio das linguagens usadas nessa área.
   
  ![1557013220106532478](https://user-images.githubusercontent.com/63822305/132774041-3858aa54-ab4b-420e-b569-9fc2b38c1ffc.jpg)
 
 ### Dados
+  
+Area bem vasta com uma das principais funcionalidades em levantar e organizra um volumes grandes de informações, criando relatórios e tornando esses dados inteligíveis para as pessoas na tomada de decisões, dentre outras.
+  
   ![0_zrPsLV-NzQ-AKjD-](https://user-images.githubusercontent.com/63822305/132775145-f8baac35-d5e8-42b8-abb8-762776fc0aaf.jpg)
   
 ### Mobile
+  
+Desenvolvimento de aplicativos ou sistemas, programando nativamente ou por meio de outras linguagens, para dispositivos móveis. Os principais sistemas operacionais mobile utilizados no mundo atualmente são o Android, da Google, e o iOS, da Apple."
+  
   ![d44beeeaf39fd4bb68305ec04e0cc327](https://user-images.githubusercontent.com/63822305/132777708-a0dda914-e227-4d1b-af36-531f354b78b2.jpeg)
 
 
-<h2 align="center"> Tecnologias utilizadas </h2 align="center">
+## **Tecnologias, dependências e bibliotecas**
 
-
-  
 
 | Ferramenta | Descrição |
 | --- | --- |
@@ -72,18 +81,13 @@ O presente projeto tem como objetivo mostrar algumas areas possiveis para desenv
 | `Postman` | Interface gráfica para realizar os testes|
 
 
-### Instalando dependencias
+### **Instruções para instalações**
 
 
-`npm init -y` 
-`npm express`  
-`npm mongoose`
-`npm nodemon`
-`npm dotenv`
-` npm cors`
+`npm init -y` `npm express`  `npm mongoose` `npm nodemon` `npm dotenv` ` npm cors`
 
 
-<h2 align="center"> Arquitetura MVC </h2 align="center">
+## **Arquitetura MVC**
 
          📁 GUIA
             |
@@ -115,14 +119,15 @@ O presente projeto tem como objetivo mostrar algumas areas possiveis para desenv
             |- 📄 server.js
 
 
-<h2 align="center"> Regras de negocio </h2 align="center">
+## **Regras de negocio**
 
 - [x] Não criar Linguagens como mesmo nome
 - [x] Não criar Areas com mesmo nome
 - [x] Para criar um novo título, deverá vincular no momento da criação a uma criação já existente no sistema, utilizando o numero do id do estúdio correspondente no corpo da requisição
 
   
-  <h2 align="center"> Rotas </h2 align="center">
+## **Features e Rotas**
+ Esta API esta sendo rodada em nuvem https://projeto-final-ismenia.herokuapp.com/ sendo necessaria a ultilização das rotas
   
   #### Rotas gerais
   
