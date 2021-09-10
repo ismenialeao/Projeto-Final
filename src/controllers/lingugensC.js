@@ -9,25 +9,17 @@ const getAll = async(req, res) =>{
 }
 
 const getAllFront = async(req, res) =>{
-    const front = req.params._area
-    const filterFront = await Linguagem.findOne({_area: new mongoose.Types.ObjectId("61394e4f62dd10a5bee9f0e6")})
-        if(!filterFront == "Font=end" ){
-            res.json(filterFront)
-        }
-        else{
-            res.status(404).send()
-        }
+    const front = await Linguagem.find().populate("area")
+    const filterFront = front.filter(front => front.area.name == "Front-end")
+
+    res.status(200).json(filterFront)
 }
 
 const getAllBack = async (req,res) =>{
-    const back = req.params._name
-    const filterBack = await Area.findOne({_name: new mongoose.Types.ObjectId("61394e4f62dd10a5bee9f0e6") })
-    if(!filterBack ){
-        res.json(filterBack) 
-        res.status(404).json(filterBack)}
-    else{
-        res.status(404).send()
-    }
+    const back = await Linguagem.find().populate("area")
+    const filterBack = back.filter(back => back.area.name == "Back-end")
+    
+        res.status(404).json(filterBack)
 }
 
 const createLinguagem = async(req, res) =>{
