@@ -10,7 +10,7 @@ const getAll = async(req, res) =>{
 
 const getAllFront = async(req, res) =>{
     const front = req.params._area
-    const filterFront = await Linguagem.findOne({_area: new mongoose.Types.ObjectId()})
+    const filterFront = await Linguagem.findOne({_area: new mongoose.Types.ObjectId("61394e4f62dd10a5bee9f0e6")})
         if(!filterFront == "Font=end" ){
             res.json(filterFront)
         }
@@ -20,10 +20,14 @@ const getAllFront = async(req, res) =>{
 }
 
 const getAllBack = async (req,res) =>{
-    const back = await Linguagem.find().populate("area")
-    const filterBack = back.filter( qual  => qual.name.area == "Back-end")
-    
-        res.status(404).json(filterBack)
+    const back = req.params._name
+    const filterBack = await Area.findOne({_name: new mongoose.Types.ObjectId("61394e4f62dd10a5bee9f0e6") })
+    if(!filterBack ){
+        res.json(filterBack) 
+        res.status(404).json(filterBack)}
+    else{
+        res.status(404).send()
+    }
 }
 
 const createLinguagem = async(req, res) =>{
