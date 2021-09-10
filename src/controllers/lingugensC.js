@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-const lingugensM = require('../models/lingugensM')
+const lingugensM = require('../models/areasM')
 const Linguagem = require('../models/lingugensM')
 
 
@@ -9,15 +9,15 @@ const getAll = async(req, res) =>{
 }
 
 const getAllFront = async(req, res) =>{
-     const front = await linguagensM.find().populate("area")
+     const front = await Linguagem.find().populate(linguagensM)
     const filterFront = front.filter(front => front.area.name == "Front-end")
 
     res.status(200).json(filterFront)
 }
 
 const getAllBack = async(req,res) =>{
-    const back = await Linguagem.find().populate("area")
-    const filterBack = back.filter(back => back.area.name == "Back-end")
+    const back = await linguagensM.find().populate("area")
+    const filterBack = back.filter(back => back.lingugensM.area == "Back-end")
 
     res.status(200).json(filterBack)
 }
