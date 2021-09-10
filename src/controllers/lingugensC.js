@@ -8,7 +8,7 @@ const getAll = async(req, res) =>{
 }
 
 const getAllFront = async(req, res) =>{
-    const front = req.params.area
+    const front = (name == "Front-end")
     const filterFront = await Linguagem.find({area:front})
         if(filterFront){
             res.json(filterFront)
@@ -19,9 +19,9 @@ const getAllFront = async(req, res) =>{
 }
 
 const getAllBack = async(req,res) =>{
-    const back = req.params.descrition
-    const FilterBack = await Linguagem.find({descrition: back})
-        if(FilterBack){
+    const back = req.params.area
+    const FilterBack = await Linguagem.find({area: back})
+        if(FilterBack == "Back-end"){
             res.json(back)
         }
         else{
