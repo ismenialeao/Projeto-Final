@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 const Linguagem = require('../models/lingugensM')
 
-const areasM = require('../models/areasM')
+const Area = require('../models/areasM')
 
 const getAll = async(req, res) =>{
    const linguagem = await Linguagem.find()
@@ -21,7 +21,7 @@ const getAllFront = async(req, res) =>{
 
 const getAllBack = async(req,res) =>{
     const back = await Linguagem.find().populate('area')
-    const filterBack = back.filter( areasM => areasM.back.name == "Back-end")
+    const filterBack = back.filter( qual  => qual.Area.name == "Back-end")
     
             res.status(404).json(filterBack)
 }

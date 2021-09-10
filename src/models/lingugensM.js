@@ -26,5 +26,5 @@ const linguegensSchema = new mongoose.Schema({
 });
 
 
-
-module.exports = mongoose.model('linguagens', linguegensSchema)
+const linguagens = mongoose.model('linguagens', linguegensSchema)
+module.exports = linguagens

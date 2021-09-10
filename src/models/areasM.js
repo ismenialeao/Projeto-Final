@@ -14,7 +14,9 @@ const areaSchema = new mongoose.Schema({
       type: Date,
       required: true,
       default: new Date
-    }
+    },
+    
+    
 })
-
-module.exports = mongoose.model('areaM', areaSchema)
+const areaM = mongoose.model('areaM', areaSchema)
+module.exports = areaM
