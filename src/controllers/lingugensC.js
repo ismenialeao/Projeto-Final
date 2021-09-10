@@ -11,7 +11,7 @@ const getAll = async(req, res) =>{
 const getAllFront = async(req, res) =>{
     const front = req.params._area
     const filterFront = await Linguagem.findOne({_area: new mongoose.Types.ObjectId()})
-        if(filterFront ){
+        if(!filterFront == "Font=end" ){
             res.json(filterFront)
         }
         else{
@@ -21,7 +21,7 @@ const getAllFront = async(req, res) =>{
 
 const getAllBack = async (req,res) =>{
     const back = await Linguagem.find().populate("area")
-    const filterBack = back.filter( qual  => qual.area.area == "Back-end")
+    const filterBack = back.filter( qual  => qual.name.area == "Back-end")
     
         res.status(404).json(filterBack)
 }
