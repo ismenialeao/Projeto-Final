@@ -17,7 +17,7 @@ const getAllFront = async(req, res) =>{
 
 const getAllBack = async (req,res) =>{
     const back = await Linguagem.find().populate("area")
-    const filterBack = back.filter(back => back.area.name == "back-end")
+    const filterBack = back.filter(back => back.area.area == "back-end")
     
         res.status(404).json(filterBack)
 }
