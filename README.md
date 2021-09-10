@@ -1,8 +1,9 @@
 <h1 align="center">  Projeto Final Reprograma
 
-<h1 align="center"> Guia de Profissoões
+<h1 align="center"> Guia de Profissoões </h3 align="center">
 
-Escolher uma profissão não é uma tarefa facil!!
+  
+ Escolher uma profissão não é uma tarefa facil!!
 Devemos levar em consideração nossas habilidades, gostos e personalidade.
 
 Ao iniciar a transição de carreira muitas pessoaas se sentem confusas pois a area da Tecnologia é gigante, area de negocios que se integrou a tecnologia, desingn,  suporte, cibersegurança, desenvolvedores dentre outras diversas.
@@ -11,13 +12,25 @@ Falta de informação muitos iniciantes acabam virando um profissional pato, nã
 abracar o mundo e não faz nada 100%.
 
 O presente projeto tem como objetivo mostrar algumas areas possiveis para desenvolvedores e as linguagens mais utilizadas por elas segundo pesquisas, porem vale lembrar que a linguagem utilizada pelo leitor é de gosto pessoal somente estaremos realizando uma citação sobre algumas possibilidades.
+  
+  
+ <h2 align="center"> Areas de programação escolhidas </h2 align="center">
+  
+ 
+ ### Back-end e Front- end
+ ![1557013220106532478](https://user-images.githubusercontent.com/63822305/132774041-3858aa54-ab4b-420e-b569-9fc2b38c1ffc.jpg)
+
+### Dados
+  ![0_zrPsLV-NzQ-AKjD-](https://user-images.githubusercontent.com/63822305/132775145-f8baac35-d5e8-42b8-abb8-762776fc0aaf.jpg)
+  
+### Mobile
+  ![d44beeeaf39fd4bb68305ec04e0cc327](https://user-images.githubusercontent.com/63822305/132777708-a0dda914-e227-4d1b-af36-531f354b78b2.jpeg)
 
 
-
-<h3 align="center"> Tecnologias utilizadas
-
+<h2 align="center"> Tecnologias utilizadas </h2 align="center">
 
 
+  
 
 | Ferramenta | Descrição |
 | --- | --- |
@@ -34,7 +47,8 @@ O presente projeto tem como objetivo mostrar algumas areas possiveis para desenv
 
 ### Instalando dependencias
 
-`npm init -y`   "npm init-y"
+
+`npm init -y` 
 `npm express`  
 `npm mongoose`
 `npm nodemon`
@@ -42,7 +56,7 @@ O presente projeto tem como objetivo mostrar algumas areas possiveis para desenv
 ` npm cors`
 
 
-<h3 align="center"> Arquitetura MVC
+<h2 align="center"> Arquitetura MVC </h2 align="center">
 
          📁 GUIA
             |
@@ -74,9 +88,43 @@ O presente projeto tem como objetivo mostrar algumas areas possiveis para desenv
             |- 📄 server.js
 
 
-<h3 align="center"> Regras de negocio
+<h2 align="center"> Regras de negocio </h2 align="center">
 
 - [x] Não criar Linguagens como mesmo nome
 - [x] Não criar Areas com mesmo nome
 - [x] Para criar um novo título, deverá vincular no momento da criação a uma criação já existente no sistema, utilizando o numero do id do estúdio correspondente no corpo da requisição
 
+  
+  <h2 align="center"> Rotas </h2 align="center">
+  
+  #### Rotas gerais
+  
+| Busca | Rota |
+| --- | --- |
+| area| '/areas' |
+| linguagem | '/linguagens'|
+  
+#### Rotas das Areas
+  
+| Metodo | Rota |Demanda de negocio|
+| --- | --- | --- |
+|GET | '/' | Pesquisa por todas as areas criadas |
+|POST |'/' | Cria um area |
+|PATCH | '/:id' | Edita um cadatatro por um id especifico |
+|DELETE | '/:id' | Deleta um cadastro por um id especifico |
+  
+ 
+#### Rotas das Linguagens
+  
+| Metodo | Rota |Demanda de negocio|
+| --- | --- | --- |
+|GET | '/' | Pesquisa por todas as linguagens criadas|
+|GET | '/front-end' | Pesquisa por todas as linguagens da area front-end cadastradas|
+|GET | '/back-end' | Pesquisa por todas as linguagens da area back-end cadastradas|
+|GET | '/dados' | Pesquisa por todas as linguagens da area dados cadastradas|
+|GET | '/mobile' | Pesquisa por todas as linguagens da area mobile cadastradas|
+|POST |'/' | Cria uma linguagem |
+|PATCH | '/:id' | Edita um cadatatro por um id especifico |
+|DELETE | '/:id' | Deleta um cadastro por um id especifico |
+  
+  
