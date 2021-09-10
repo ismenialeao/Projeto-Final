@@ -1,7 +1,23 @@
-<h1 align="center">  Projeto Final Reprograma
+
+<h1 align="center"> 
+  
+  ![242488-desenvolvedor-feminino-grátis-vetor](https://user-images.githubusercontent.com/63822305/132923561-c685f736-8823-45be-a706-078c738b87b0.jpg)
+
 
 <h1 align="center"> Guia de Profissoões </h3 align="center">
 
+## **Sumário**
+
+- [Introduçãoção](#introdução)
+- [Desenvolvimento](#desenvolvimento)
+- [Fonte dos dados](#fonte-dos-dados)
+- [Funcionalidades](#funcionalidades)
+- [Tecnologias, dependências e bibliotecas](#tecnologias-dependências-e-bibliotecas)
+- [Instruções para instalação e contribuições no projeto](#instruções-para-instalação-e-contribuições-no-projeto)
+- [Features e rotas](#features-e-rotas)
+- [Referências](#referências)
+  
+  ## **Introdução**
   
  Escolher uma profissão não é uma tarefa facil!!
 Devemos levar em consideração nossas habilidades, gostos e personalidade.
@@ -13,11 +29,22 @@ abracar o mundo e não faz nada 100%.
 
 O presente projeto tem como objetivo mostrar algumas areas possiveis para desenvolvedores e as linguagens mais utilizadas por elas segundo pesquisas, porem vale lembrar que a linguagem utilizada pelo leitor é de gosto pessoal somente estaremos realizando uma citação sobre algumas possibilidades.
   
+  ## **Desenvolvimento**
+  
+ Mudança de trabalho e mudança de carreira são passos distintos. Antes de qualquer coisa, é importante ter isso em mente. Mudar de carreira já é um processo mais amplo, que requer planejamento para superar dificuldades que são comuns e desafiadoras.
+- Identifique os seus medos
+- Pesquise sobre a area escolhida
+- Descubra as suas metas
+- Planeje as contas para o futuro
+- Entenda que o mercado muda
+- Faça Network com profissionais da area desejada
+  
   
  <h2 align="center"> Areas de programação escolhidas </h2 align="center">
   
  
  ### Back-end e Front- end
+  
  ![1557013220106532478](https://user-images.githubusercontent.com/63822305/132774041-3858aa54-ab4b-420e-b569-9fc2b38c1ffc.jpg)
 
 ### Dados
@@ -127,4 +154,14 @@ O presente projeto tem como objetivo mostrar algumas areas possiveis para desenv
 |PATCH | '/:id' | Edita um cadatatro por um id especifico |
 |DELETE | '/:id' | Deleta um cadastro por um id especifico |
   
-  
+## **Referências**
+
+[{reprograma} - Projeto Final](https://github.com/ismenialeao/Projeto-Final)
+
+[Inspiração: Pretitudes (autoria: @priscilaestevao)](https://github.com/priscilaestevao/pretitudes-project-reprograma)
+
+[Transição de Carreira](https://rockcontent.com/br/talent-blog/como-superar-as-dificuldades/)
+
+<hr>
+
+[Linkedin - Ismênia Leão](https://www.linkedin.com/in/ism%C3%AAnia-le%C3%A3o-a39942198/)
