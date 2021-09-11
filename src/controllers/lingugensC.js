@@ -9,7 +9,7 @@ const getAll = async(req, res) =>{
 }
 
 const getAllFront = async(req, res) =>{
-    const front = await Linguagem.find().populate({path: "area.name"})//.where('area.name').equals("Front-end")
+    const front = await Linguagem.find().populate({path: "area"})//.where('area.name').equals("Front-end")
     //const filterFront = front.filter(front => front.area.name)
 
     res.status(200).json(front)
