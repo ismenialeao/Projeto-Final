@@ -10,12 +10,12 @@ db.connect()
 app.use(express.json())
 
 
-//TODAS ROTAS http://localhost:5555/areas
+//ROTA AREA
 const router = require('./src/routes/areasR')
 app.use('/areas', router)
 
 
-// //ROTAS 
+//ROTAS 
 const routerLinguagem = require('./src/routes/linguagensR')
 app.use('/linguagens', routerLinguagem)
 

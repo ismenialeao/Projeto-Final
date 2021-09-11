@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 const Linguagem = require('../models/lingugensM')
-
 const Area = require('../models/areasM')
+
 
 const getAll = async(req, res) =>{
    const linguagem = await Linguagem.find()
@@ -10,7 +10,7 @@ const getAll = async(req, res) =>{
 
 const getAllFront = async(req, res) =>{
     const front = await Linguagem.find().populate({path: "area", match: {name: {$eq: 'Front-end'}} })//.where('area.name').equals("Front-end")
-    //const filterFront = front.filter(front => front.area.name)
+    
 
     res.status(200).json(front)
 }
@@ -28,7 +28,8 @@ const createLinguagem = async(req, res) =>{
         linguagem: req.body.linguagem,
         descrition: req.body.descrition,
         area: req.body.area,
-        criadoEm: req.body.criadoEm
+        criadoEm: req.body.criadoEm,
+
     })
 
     const linguagemJaExiste = await Linguagem.findOne({linguagem: req.body.linguagem})

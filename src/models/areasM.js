@@ -15,8 +15,7 @@ const areaSchema = new mongoose.Schema({
       required: true,
       default: new Date
     },
-    
-    
+    linguagens: {type: mongoose.Schema.Types.ObjectId, ref: 'linguagens'} 
 })
-const areaM = mongoose.model('areaM', areaSchema)
-module.exports = areaM
+
+module.exports = mongoose.model('areaM', areaSchema)
