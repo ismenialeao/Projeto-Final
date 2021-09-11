@@ -8,10 +8,10 @@ const controller = require('../controllers/lingugensC')
 router.get('/',controller.getAll)
 
 //GET FRONT-END
-router.get('/front-end', controller.getAllFront)
+router.get('/frontend', controller.getAllFront)
 
 //GET BACK-END
-router.get('/back-end',controller.getAllBack)
+router.get('/backend',controller.getAllBack)
 
 //POST
 router.post('/', controller.createLinguagem)
