@@ -10,9 +10,9 @@ const getAll = async(req, res) =>{
 
 const getAllFront = async(req, res) =>{
     const front = await Linguagem.find().populate("area")
-    const filterFront = front.filter(front => front.area.name)
+    // const filterFront = front.filter(front => front.area.name)
 
-    res.status(200).json(filterFront)
+    res.status(200).json(front)
 }
 
 const getAllBack = async (req,res) =>{
