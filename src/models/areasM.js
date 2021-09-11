@@ -10,7 +10,7 @@ const areaSchema = new mongoose.Schema({
       type: String,
       required: true
     },
-    criadoEm: { //data e horario em que foi criado
+    criadoEm: { 
       type: Date,
       required: true,
       default: new Date
