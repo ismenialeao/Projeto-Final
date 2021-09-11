@@ -12,7 +12,7 @@ const getAllFront = async(req, res) =>{
     const front = await Linguagem.find()
     // const filterFront = front.filter(front => front.area.name)
 
-    res.status(200).json(front)
+    res.status(200).json(10)
 }
 
 const getAllBack = async (req,res) =>{
